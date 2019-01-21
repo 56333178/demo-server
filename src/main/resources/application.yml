@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:8888/eureka/
+  instance:
+    prefer-ip-address: true
+server:
+  port: 8889
+#  tomcat:
+#    max-threads: 2
