@@ -7,6 +7,10 @@ eureka:
       defaultZone: http://root:123456@aitieta.com:8888/eureka/,http://root:123456@aitieta.com:8887/eureka/
   instance:
     prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 5
+    instance-id: ${eureka.instance.ip-address}:${server.port}
+    ip-address: aitieta.com
 server:
   port: 8889
 #  tomcat:
