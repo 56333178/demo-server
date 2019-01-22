@@ -10,12 +10,12 @@ import java.util.List;
 public class HelloController {
     @RequestMapping("hello")
     public List<String> hello(){
-//        try {
-//            System.out.println("睡觉");
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            System.out.println("睡觉");
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         List<String> list=new ArrayList<>();
         list.add("hello1");
         list.add("hello2");
