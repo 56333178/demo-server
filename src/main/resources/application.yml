@@ -5,6 +5,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://root:123456@aitieta.com:8888/eureka/,http://root:123456@aitieta.com:8887/eureka/
+    eureka-service-url-poll-interval-seconds: 10
   instance:
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 5
